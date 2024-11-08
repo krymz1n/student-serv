@@ -1,82 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
-	<!-- Andrea Hirons Final Project -->
-	<title>Puppy Palace - Training - Lab 6</title>
-	<link href="dogs.css" rel="stylesheet">
-	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Gravy Press @ boryan.online</title>
+	<meta name="description" content="Bo Ryan's Personal Website">
 
+	<link rel="stylesheet" href="desktop.css">
+	<link rel="stylesheet" href="https://indestructibletype.com/fonts/Jost.css" type="text/css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
+
 <body>
-<div id="wrapper">
-	<header>
-		<div id="logo">The Puppy Palace - Lab 6</div>
-	
-		<nav id="content-topNav">
-			<a href="index.html">Home</a>
-			<a href="train.html">Training</a>
-			<a href="breeds.html">Breeds</a>
-			<a href="care.html">Care & Feeding</a>
-			<a href="adopt.html">Adoption</a>
-			<a href="success.html">Success&nbsp;Stories</a>
-			<a href="faq.html">FAQ</a>
-			<a href="contact.html">Contact</a>
-			<a href="../../index.html">Site&nbsp;Map</a>
-		</nav>
-	</header>
-	
-	<nav id="content-sideNav">
-		<a href="index.html">Home</a>
-		<a href="train.html">Training</a>
-		<a href="breeds.html">Breeds</a>
-		<a href="care.html">Care & Feeding</a>
-		<a href="adopt.html">Adoption</a>
-		<a href="success.html">Success&nbsp;Stories</a>
-		<a href="faq.html">FAQ</a>
-		<a href="contact.html">Contact</a>
-		<a href="../../index.html">Site&nbsp;Map</a>
-	</nav>
-	
-	<main>
-		<h3>Puppy Training Main Content</h3>
+  <header>
+      <div id="content-hero">
+        <img src="pics/train.jpg"
+        alt="A dark blue train car, covered in white graffiti writing and faded commercial markings.">
+      </div>
+  </header>
+  
+  <main>
+    <div id="grid-wrapper">
 
-			Buy dog
-			Take dog home
-			Feed dog
-				wet food
-				dry food
-				people food
-			Take dog for a walk
-			Contain dog for the night
+      <div class="grid-fullWidth">
+        <nav id="content-topNav">
+            <a href="index.html" id="content-topNav__homeAnchor">Home</a>
+            <a href="lists.html">lists</a>
+            <a href="train.html">train</a>
+            <!-- <a href="design.html">Design</a>
+            <a href="illu.html">Pictures</a>
+            <a href="photog.html">Photos</a>
+            <a href="modules.html">Words</a> -->
+        </nav>
+        <h1>boryan.online</h1>
+      </div>
 
-			Toys
+			<div class="grid-leftColumn">
+				<nav id="content-sideNav">
+						<a href="index.html">Home</a>
+						<a href="lists.html">lists</a>
+						<a href="train.html">train</a>
+						<!-- <a href="design.html">Design</a>
+						<a href="illu.html">Pictures</a>
+						<a href="photog.html">Photos</a>
+						<a href="modules.html">Words</a> -->
+				</nav>
+			</div> 
 
-			ball
-			bone
-			leash
-			chew toy
-			frisbee
-			
-			Dog
-				4 feet, tail, nose, etc... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris in mi mauris. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-			Cat
-				Not a dog. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris in mi mauris. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-			Puppy
-				Small dog. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris in mi mauris. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-			Kitten
-				Still not a dog. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris in mi mauris. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-			Owner
-				Depends on point of view. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris in mi mauris. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.		
-		
-	</main>
-	
-	<footer>
-		Puppy Palace, for all your pet needs. 
-		<address>
-			123 Main St, Eugene, OR 97405 &copy; 2002-2024 <a href="mailto:email@petpalace.com">email@petpalace.com</a>
-		</address>
-	</footer>
-</div>
+			<div class="grid-centerColumn">
+				<div class="layout-verticalPadding">
+					<h2>Puppy Training Main Content</h2>
+					<ul>
+						<li>Buy dog</li>
+						<li>Take home dog</li>
+						<li>Feed dog
+							<ul>
+								<li>Wet food</li>
+								<li>Dry food</li>
+								<li>People food</li>
+							</ul>
+						</li>
+						<li>Take dog on a walk</li>
+						<li>Contain dog for the night</li>
+					</ul>
+				</div>
+
+				<div class="layout-verticalPadding">
+					<h2>Toys</h2>
+					<ul>
+						<li>ball</li>
+						<li>bone</li>
+						<li>leash</li>
+						<li>chew Toys</li>
+						<li>frisbee disc</li>
+					</ul>
+				</div>
+
+				<div class="layout-verticalPadding">
+					<dl>
+						<dt>Dog</dt>
+						<dd>4 feet, tail, nose, etc... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris in mi mauris. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</dd>
+						<dt>Cat</dt>
+						<dd>Not a dog. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris in mi mauris. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</dd>
+						<dt>Puppy</dt>
+						<dd>Small dog. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris in mi mauris. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+						</dd>
+						<dt>Kitten</dt>
+						<dd>Still not a dog. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris in mi mauris. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</dd>
+						<dt>Owner</dt>
+						<dd>Depends on point of view. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris in mi mauris. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</dd>
+					</dl>
+				</div>
+
+			</div>
+
+      <footer id="footer">
+        <div class="layout-verticalPadding">
+          <hr>
+          <p>
+            <a href="mailto:bo.ryan@me.com" id="mail">Contact</a>
+          </p>
+          <aside>
+            &copy; Bo Ryan Crum 2024, all rights reserved
+          </aside>
+          
+        </div>
+      </footer>
+
+    </div>
+
+  </main>
 </body>
 </html>

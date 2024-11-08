@@ -17,7 +17,7 @@ Defines grid, placement on grid*/
   max-width: 900px;
   margin: auto;
   display: grid;
-  grid-template-columns: 10vw 1fr minmax(60vw, 3fr) 1fr 10vw;
+  grid-template-columns: 1fr 2fr 8fr 2fr 1fr;
   grid-auto-rows: auto;
   gap: 1em;
 }
@@ -36,7 +36,7 @@ Defines grid, placement on grid*/
 
 .grid-centerColumn{
   grid-row: auto;
-  grid-column: 3 / span 1;
+  grid-column: 3;
   /* min-width: 70vw; */
 }
 
@@ -64,8 +64,9 @@ Defines div size, spacing, positioning within grid boxes */
 Defines appearance of content inside the layout */
 
 #content-hero{
+  width: 100vw;
   grid-column: 1 / -1;
-  grid-row: 1;
+  grid-row: auto;
   overflow: hidden;
   max-height: 50vh;
   display: flex;
@@ -96,9 +97,9 @@ Defines appearance of content inside the layout */
   color: var(--text);
 }
 
-#content-sideNav{
+/* #content-sideNav{
 
-}
+} */
 
 #content-sideNav a{
   display: block;
@@ -149,9 +150,9 @@ footer #mail::before{
   text-transform: none;
 }
 
-p{
+/* p{
   
-}
+} */
 
 h1, h2, h3, h4, h5, h6{
   margin: 0em;
@@ -175,8 +176,14 @@ a{
   font-weight: 600;
 }
 
-
-
 a:hover{
   text-decoration: underline;
 }
+
+dl dt {
+  font-size: 1em;
+  font-weight: bold;
+  border-bottom: thin solid var(--text);
+  margin: 0.5em 0;
+}
+
