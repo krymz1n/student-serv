@@ -82,3 +82,18 @@ git push origin main
 ls
 git remote -v
 git status
+cd public_html/web
+ls
+git checkout master
+git branch
+git checkout master
+git stash 
+git checkout master
+checkout --detach
+git checkout --detach
+git branch
+git merge temp
+git merge temp master
+git remote -v
+git status
+git checkout HEAD:detach
