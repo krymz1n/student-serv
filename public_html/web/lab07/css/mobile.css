@@ -1,0 +1,33 @@
+/* max width is 720 px */
+
+#grid-wrapper{
+  /* width: 90vw; */
+  min-width: 480px;
+  max-width: 720px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 0 1fr 8fr 1fr 0;
+  grid-auto-rows: auto;
+  gap: 1em;
+}
+
+body {
+  font-size: 16pt;
+}
+
+h1 {
+  font-size: 13vw;
+  overflow: hidden;
+}
+
+#content-topNav a {
+  font-size: 4vw;
+}
+
+.layout-flexRow {
+  flex-direction: column;
+}
+
+.content-flexSquare {
+  flex-direction: row;
+}
