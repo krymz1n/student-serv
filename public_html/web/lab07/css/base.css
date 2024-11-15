@@ -5,6 +5,8 @@ Gravy Press @ boryan.online */
 :root{
   --text: #000;
   --bg: #fff;
+  --nm-text: #fff;
+  --nm-bg: #000;
   --standard-radius: 3px;
   --layout-gap: 1em;
 }
@@ -234,5 +236,28 @@ dl dt {
   font-weight: bold;
   border-bottom: thin solid var(--text);
   margin: 0.5em 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td, th{
+  border: 0 solid black;
+  padding: .2em;
+}
+
+table th {
+  text-align: left;
+}
+
+tr:nth-of-type(even) {
+  background: #eee;
+}
+
+thead tr {
+  background: var(--nm-bg);
+  color: var(--nm-text);
 }
 
