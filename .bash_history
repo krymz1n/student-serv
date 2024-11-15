@@ -97,3 +97,26 @@ git merge temp master
 git remote -v
 git status
 git checkout HEAD:detach
+git pull remote main
+git status
+git remote -v
+git remote
+git pull origin
+f
+branches
+git branch
+git pull master
+branch
+git branch
+git checkout master
+ommit
+git commit
+git checkout HEAD:detach
+git checkout temp
+git commit
+git commit -a
+git stash
+checkout temp
+git checkout temp
+git cheout master
+git checkout master
