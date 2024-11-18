@@ -1,0 +1,191 @@
+/* Andrea Hirons's CS195 starting CSS for The Puppy Palace - Lab 6 */
+/* Obnoxious Lime Green for testing -- border: 1px solid #0f0; */
+
+
+body
+{
+
+}
+
+#wrapper
+{
+
+}
+
+header
+{
+	background-color: beige;
+}
+
+#logo
+{
+
+}
+
+h1, h2, h3, h4, h5, h6
+{
+
+}
+
+nav
+{
+
+}
+
+/* Links in rest of page */
+
+/* 
+a:link {color: blue;}
+a:visited {color: pink;}
+a:hover  {color: red;}
+a:active, a:focus {color: yellow;}  */
+
+#content-topNav
+{
+	background-color: #fcf;
+	border-top: 2px solid #f9f;
+	border-bottom: 2px solid #f9f; /* #909 med purple #303 dark purple */
+	padding: 5px;
+	text-align: center;
+	line-height: 1.8em;	
+}
+
+#content-topNav a:link 
+{
+	color: rgba(51,0,51,.7);	
+	border: 1px solid rgba(51,0,51,.7);
+	background-color: rgba(51,0,51,.3);
+		border-radius: 5px;
+	padding: 2px;
+	text-decoration: none;
+}
+
+#content-topNav a:visited 
+{
+
+}
+
+#content-topNav a:hover   
+{
+
+}
+
+#content-topNav a:active, #content-topNav a:focus  
+{
+
+} 
+
+#content-sideNav /* Left Column */
+{
+
+}
+
+#content-sideNav ul
+{
+
+}
+
+#content-sideNav li
+{
+
+}
+
+#content-sideNav li:hover
+{
+
+}
+
+#content-sideNav a
+{
+
+}
+
+main /* Right Column */
+{
+
+}
+
+.washout
+{
+	background-color: rgba(255,255,255,.5);
+}
+
+acticle
+{
+
+}
+
+aside
+{
+
+	width: 250px;
+	float: right;
+	background-color: #fcf;
+	border-left: 2px solid #f9f;
+}
+
+aside img /* same code as img-left class, really should do one or the other */
+{
+
+}
+
+footer
+{
+
+	clear: both;
+	border-top: 2px solid #f9f; /* #909 med purple #303 dark purple */
+}
+
+address
+{
+
+}
+
+/* Table Styles */
+table, td, th 
+{ 
+
+}
+
+td
+{
+
+}
+
+th
+{
+
+}
+
+.rowHeader  /* th */
+{
+
+}
+
+
+
+dt
+{
+
+}
+
+img
+{
+	
+}
+
+.img-left
+{
+	float: left;
+	margin-right: 5px;
+}
+
+.img-right
+{
+	float: right;
+}
+
+h4.listHeader
+{
+
+}

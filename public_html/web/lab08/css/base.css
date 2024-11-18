@@ -1,0 +1,274 @@
+/* CSS for crumb project 2
+Gravy Press @ boryan.online */
+
+
+:root{
+  --text: #000;
+  --bg: #fff;
+  --nm-text: #fff;
+  --nm-bg: #000;
+  --standard-radius: 3px;
+  --layout-gap: 1em;
+}
+
+/* Grid 
+Defines grid, placement on grid*/
+
+#grid-wrapper{
+  /* width: 90vw; */
+  min-width: 480px;
+  max-width: 900px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr 8fr 2fr 1fr;
+  grid-auto-rows: auto;
+  gap: var(--layout-gap);
+}
+
+.grid-fullWidth{
+  grid-column: 2 / -2;
+  grid-row: auto;
+  /* background-color: #0f0; */
+}
+
+.grid-leftColumn{
+  grid-column: 1;
+  grid-row: auto;
+}
+
+.grid-centerColumn{
+  grid-row: auto;
+  grid-column: 3 / -3;
+  /* min-width: 70vw; */
+}
+
+/* Layout
+Defines div size, spacing, positioning within grid boxes */
+
+.layout-verticalPadding{
+  margin: 0 0;
+  /* background-color: #000; */
+}
+
+.layout-centered{
+  display: flex;
+  justify-content: center;
+}
+
+
+.layout-size-medium{
+  height: 15em;
+  overflow: hidden;
+}
+
+.layout-flexRow{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* background-color: #888; */
+  align-items: flex-start;
+  gap: 10px;
+}
+
+/* .layout-flexRow > * {
+  margin: 0 10px;
+} */
+
+.layout-flexRow p {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.layout-flexRow img{
+  max-width: 100%;
+  height:auto;
+}
+
+.content-flexSquare{
+  height: 25vw;
+  gap: var(--layout-gap);
+}
+.content-flexSquare > img {
+  height: 100%;
+  object-fit: cover;
+  width: auto;
+
+
+}
+
+/* Content
+Defines appearance of content inside the layout */
+
+#content-hero{
+  width: 100vw;
+  grid-column: 1 / -1;
+  grid-row: auto;
+  overflow: hidden;
+  max-height: 50vh;
+  display: flex;
+  margin-bottom: 2em;
+}
+
+#content-hero img{
+  object-fit: cover;
+  width: 100%;
+  
+}
+
+#content-topNav{
+  text-align: center;
+}
+
+#content-topNav a{
+  font-size: 2em;
+  font-weight: 400;
+}
+
+#content-topNav a::after{
+  content: '.';
+}
+
+#content-topNav__homeAnchor{
+  --text: #AAA;
+  color: var(--text);
+}
+
+#content-sideNav{
+  display: none;
+  text-align: right;
+}
+
+#content-sideNav a{
+  display: block;
+  padding: 2px 0;
+}
+
+#content-sideNav li {
+  list-style-type: none;
+}
+
+#content-sideNav .style-nav--here {
+  text-decoration: underline;
+}
+
+#content-topNav .style-nav--here {
+  --text: #AAA;
+  color: var(--text);
+}
+
+.content-cta-button {
+  border: thin solid var(--text);
+  border-radius: var(--standard-radius);
+  background-color: var(--bg);
+  padding: 0.5em;
+  transition: 0.2s ease-out;
+}
+
+.content-cta-button:hover {
+  background-color: var(--text);
+  color: var(--bg);
+  text-decoration: none;
+}
+
+.content-image img{
+  height: 100%;
+}
+
+#content-bkgdImg--bridge {
+  background-image: url(../pics/tRain-3.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+#content-bkgdImg--bridge > * {
+  padding: calc(var(--layout-gap) /4);
+  color: var(--nm-text);
+}
+
+section{
+  margin: 0em;
+}
+
+body{
+  font-family: 'Lato', sans-serif;
+  /* line-height: auto; */
+  margin: 0em;
+}
+
+footer{
+  grid-column: 3/-3;
+  grid-row: auto;
+  margin-bottom: 1em;
+}
+
+footer aside{
+  --text: #AAA;
+  color: var(--text);
+}
+
+footer #mail::before{
+  font-family: 'Material Icons';
+  content: 'mail ';
+  text-transform: none;
+}
+
+/* p{
+  
+} */
+
+h1, h2, h3, h4, h5, h6{
+  margin: 0em;
+}
+
+h1{
+  font-size: 6em;
+  text-align: center;
+
+}
+
+h2{
+  font-size: 2em;
+}
+
+a{
+  font-family: 'Lato', sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--text);
+  font-weight: 600;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+dl dt {
+  font-size: 1em;
+  font-weight: bold;
+  border-bottom: thin solid var(--text);
+  margin: 0.5em 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td, th{
+  border: 0 solid black;
+  padding: .2em;
+}
+
+table th {
+  text-align: left;
+}
+
+tr:nth-of-type(even) {
+  background: #eee;
+}
+
+thead tr {
+  background: var(--nm-bg);
+  color: var(--nm-text);
+}
+
