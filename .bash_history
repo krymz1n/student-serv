@@ -120,3 +120,51 @@ checkout temp
 git checkout temp
 git cheout master
 git checkout master
+checkout master
+git checkout master
+git checkout temp
+git stash
+git checkout temp
+git pull remote main
+checkout master
+git checkout master
+ls -a
+cd ..
+ls -a
+cd .git
+ls -a
+open config
+code config
+cd ..
+ls
+cd public_html
+git status
+git branch
+git checkout master
+git fetch
+git branch
+git checkout master
+cd ../.git
+ls -a
+code hooks
+git checkout master
+cd ..
+git checkout master
+git pull
+cd ~/.git
+ls
+cd hooks
+chmod -x post-receive
+chmod +x post-receive
+ls -l 
+cd ~
+git stash
+git checkout temp
+git checkout master
+git merge temp
+cd .git/hooks
+rm post-receive
+cd ~
+git merge temp
+git checkout master
+git merge temp

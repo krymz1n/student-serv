@@ -1,3 +1,8 @@
 [user]
 	email = bo.ryan@me.com
 	name = boRyan
+[http]
+	postBuffer = 524288000
+[pack]
+	windowMemory = 100m
+	packSizeLimit = 100m
