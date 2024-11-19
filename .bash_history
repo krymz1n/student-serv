@@ -168,3 +168,6 @@ cd ~
 git merge temp
 git checkout master
 git merge temp
+git stash
+git merge temp
+git branch
