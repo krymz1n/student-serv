@@ -299,3 +299,20 @@ thead tr {
   color: var(--nm-text);
 }
 
+label[for=lName]::before {
+  font-family: 'Material Icons';
+  content: 'group';
+  padding-right: .2em;
+}
+
+label[for=fName]::before {
+  font-family: 'Material Icons';
+  content: 'person';
+  padding-right: .2em;
+}
+
+label[for=specialty]::before {
+  font-family: 'Material Icons';
+  content: 'star';
+  padding-right: .2em;
+}
