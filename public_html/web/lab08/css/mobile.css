@@ -41,6 +41,30 @@ h1 {
   flex-direction: row;
 }
 
+.content-form__tabular {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content-form__tabular > *,
+.content-form__tabular input[type=text],
+.content-form__tabular textarea {
+  width: 100%;
+  font-size: 16pt;
+}
+
+.content-form__tabular label,
+.content-form__tabular span {
+  text-align: left;
+}
+
+#content-form__submit {
+  width: 100%;
+  font-size: 16pt;
+
+}
+
 thead {
   display: none;
 }
@@ -71,3 +95,5 @@ td:nth-of-type(2)::before {
 td:nth-of-type(3)::before {
   content: "Job Title";
 }
+
+

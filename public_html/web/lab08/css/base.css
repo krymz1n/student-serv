@@ -99,6 +99,33 @@ Defines div size, spacing, positioning within grid boxes */
 /* Content
 Defines appearance of content inside the layout */
 
+.content-form__tabular {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: .5em 1em;
+}
+
+.content-form__tabular input[type=text],
+.content-form__tabular textarea {
+  width: 60%;
+  min-width: 200px;
+}
+
+.content-form__tabular label,
+.content-form__tabular span {
+  text-align: right;
+}
+
+.content-form__tabular textarea::placeholder {
+  font-family: "Lato";
+}
+
+#content-form__submit {
+  position: relative;
+  width: fit-content;
+
+}
+
 #content-hero{
   width: 100vw;
   grid-column: 1 / -1;
