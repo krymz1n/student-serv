@@ -171,3 +171,13 @@ git merge temp
 git stash
 git merge temp
 git branch
+git branch temp
+git checkout temp
+stash
+git stash
+git checkout temp
+git clone remote master
+git checkout master
+git merge temp
+cd ~/.git
+code gitignore
