@@ -181,3 +181,13 @@ git checkout master
 git merge temp
 cd ~/.git
 code gitignore
+git merge temp
+git merge
+git checkout temp
+git merge temp
+git merge temp:master
+git checkout master
+git merge temp
+git pull temp
+git status
+git merge temp

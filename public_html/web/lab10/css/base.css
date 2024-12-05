@@ -215,7 +215,7 @@ Defines appearance of content inside the layout */
 }
 
 #content-bkgdImg--bridge {
-  background-image: url(../pics/tRain-3.jpg);
+  background-image: url(../pics/train-3.jpg);
   background-position: center;
   background-size: cover;
 }
