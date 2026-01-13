@@ -1,0 +1,133 @@
+/* BoRyan's CIS195 CSS for Lab3 */
+
+/* Importing Lato font and defining classes*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+.lato-regular {
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	}
+
+/* Importing Pirata One, Vollkorn, and Vollkorn SC*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Pirata+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn+SC:wght@400;600;700;900&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap');
+:root {
+	--dark: rgb(49, 43, 37);
+	--light: rgb(247, 243, 226);
+	--head-font: "Vollkorn SC";
+	--body-font: "Lato", sans-serif;
+}
+
+body
+{
+	font-family: var(--body-font);
+	background-color: var(--light);
+	color: var(--dark)
+}
+
+header
+{
+	text-align: center;
+	background-color: var(--dark);
+	color: var(--light);
+	padding: 1em;
+}
+/* Common font for high level Headers*/
+h1, h2
+{
+	font-family: var(--head-font);
+}
+
+h1
+{
+	background-color: var(--dark);
+	color: var(--light);
+	padding: .2em;
+}
+
+h2
+{
+	line-height: 1;
+	padding-top: 1rem;
+	padding-bottom: .5rem;
+	border-bottom: 2pt solid var(--dark);
+}
+
+h3
+{
+	line-height: 1;
+	padding-top: 1em;
+	font-size: medium;
+}
+
+nav
+{
+	text-align: center;
+	padding: .2em;
+	a:hover, a:focus{
+		font-weight:500;
+		color: var(--light);
+		background-color: var(--dark);
+		padding: .2em .2em .4em .2em;
+		border-radius: 0 0 .2em .2em;
+	}
+	a {
+		padding-inline: .2em;
+	}
+}
+
+p
+{
+	margin-left: .5rem;
+}
+
+a
+{
+	color: var(--dark);
+}
+
+ol li::marker{
+	font-weight: 600;
+}
+
+ol li{
+	padding-left: .2em;
+}
+
+ul {
+	list-style-type: none;
+}
+
+ul li::before{
+	padding-right:.4em;
+	content: '\25b6';
+	color: var(--dark);
+	font-size: .6em;
+}
+
+main
+{
+	padding: 0em 3em;
+}
+
+aside
+{
+	margin-left: 1em;
+	padding-left: .618em;
+	border-left: 1pt solid #222;
+}
+
+footer
+{
+	margin-top: 3em;
+	padding: 1em .5em 1em .5em;
+	border-top: 1px solid var(--dark);
+	text-align: center;
+}
+
+address
+{
+	font-weight: 400;
+	color: #666
+}

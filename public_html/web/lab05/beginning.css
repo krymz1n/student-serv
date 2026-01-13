@@ -1,0 +1,263 @@
+/* BoRyan's CIS195 CSS for Lab 5 */
+
+/* Importing Lato font and defining classes*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+/* Importing Pirata One, Vollkorn, and Vollkorn SC*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Pirata+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn+SC:wght@400;600;700;900&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root {
+	--dark: rgb(49, 43, 37);
+	--light: rgb(247, 243, 226);
+	--head-font: "Vollkorn SC", "Lato", sans-serif;
+	--body-font: "Lato", sans-serif;
+}
+
+body
+{
+	font-family: var(--body-font);
+	background-color: var(--light);
+	color: var(--dark);
+}
+
+#titletext{
+	background-color: unset;
+	color: var(--dark)
+}
+
+.background-div{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding: 1em;
+	height: auto;
+	overflow: hidden;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	background-image: url(./pics/map.png); 
+	background-size: cover;
+	background-position: center;
+	align-items: center;
+	mix-blend-mode: multiply;
+}
+
+/* Common font for high level Headers*/
+h1, h2
+{
+	font-family: var(--head-font);
+}
+
+h1
+{
+	background-color: var(--dark);
+	color: var(--light);
+	padding: .2em;
+	border-radius: 5px;
+}
+
+h2
+{
+	line-height: 1;
+	padding-top: 1rem;
+	padding-bottom: .5rem;
+	border-bottom: thin solid var(--dark);
+}
+
+
+h3
+{
+	line-height: 1;
+	padding-top: 1em;
+	font-size: medium;
+}
+
+details{
+	border: thin solid;
+}
+
+details summary{
+	background-color: var(--dark);
+	color: var(--light);
+	padding: .2em;
+}
+
+nav
+{
+	text-align: center;
+	padding: .2em;
+	a:hover, a:focus{
+		font-weight:500;
+		color: var(--light);
+		background-color: var(--dark);
+		padding: .2em .2em .4em .2em;
+		border-radius: 0 0 .2em .2em;
+	}
+	a {
+		padding-inline: .2em;
+	}
+}
+
+p
+{
+	margin-left: .5rem;
+}
+
+a
+{
+	color: var(--dark);
+}
+
+ol li::marker{
+	font-weight: 600;
+	
+}
+
+ol li{
+	padding-left: .5em;
+	padding-bottom: .25em;
+	border-left: thin solid var(--dark);
+}
+
+.ol_complex{
+}
+
+.ol_complex li{
+	padding-left: .5em;
+	padding-bottom: .25em;
+	border-left: unset;
+}
+
+ul {
+	list-style-type: none;
+}
+
+ul li::before{
+	padding-right:.4em;
+	content: '\25b6';
+	color: var(--dark);
+	font-size: .6em;
+}
+
+main
+{
+	padding: 0em 3em;
+}
+
+aside
+{
+	background: var(--dark);
+	color: var(--light);
+	padding: 1em;
+}
+
+footer
+{
+	margin-top: 3em;
+	padding: 1em .5em 1em .5em;
+	border-top: 1px solid var(--dark);
+	text-align: center;
+}
+
+address
+{
+	font-weight: 400;
+	color: #666
+}
+
+#wrapper{
+	max-width: min(80vw, 960px); 
+	margin: auto;
+	border: solid thin var(--dark);
+	padding: 3em;
+}
+
+#heroimage{
+	align-content: center; 
+	border: thin solid; 
+	margin: auto; 
+	max-width: 100%; 
+}
+
+/* Responsive Styles */
+
+.responsive-image{
+	width: 40vw
+}
+.flex-container {
+	display: flex;
+	flex-direction: row;
+	gap: 2em;
+	align-items: center;
+}
+
+/* narrow desktop windows*/
+@media (max-width: 800px){
+	.flex-container {
+		flex-direction: column;
+	}
+	.responsive-image{
+		width: 70vw;
+	}
+}
+
+/*mobile*/ 
+@media (orientation: portrait) {
+	.flex-container {
+		flex-direction: column;
+	}
+	.responsive-image{
+		width: 70vw;
+	}
+	body{
+		font-size: 16pt;
+	}
+}
+
+@media print{
+
+	:root {
+		--dark: #000;
+		--light: #fff;
+
+	body{
+		font-size: 12pt;
+	}
+
+	@page{
+		size: portrait;
+	}
+
+	header, footer, nav{
+		display: none;
+	}
+
+	#wrapper{
+		border: none;
+	}
+
+	#titletext{
+		color: var(--dark);
+	}
+
+	h1, 
+	h2, 
+	h3,
+	aside,
+	details,
+	details summary
+	{
+		color: var(--dark);
+		background: var(--light);
+	}
+
+	.responsive-image{
+		width: 30vw;
+	}
+	.flex-container{
+		flex-direction: row;
+	}
+
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Sue Student, CIS195, Lab 1, Part 2 -->
+	<title>CIS195 - BoRyan's Lab 4 - Pictures</title>
+	<meta name="description" content="Lab 4 for Andrea Hirons">
+	<meta name="keywords" content="CIS195, Andrea Hirons, LCC, Lab 3">
+	<meta name="author" content="BoRyan Crum">
+	<link href="beginning.css" rel="stylesheet" type="text/css">
+	
+	<style>
+		.responsive-image{
+			width: 40vw
+		}
+		.flex-container {
+			display: flex;
+			flex-direction: row;
+			gap: 2em;
+		}
+		@media (max-width: 800px) {
+			.flex-container {
+				flex-direction: column;
+			}
+			.responsive-image{
+				width: 80vw;
+			}
+		}
+
+	</style>
+</head>
+<body>
+
+<header class="header">
+	<div class="background-div">
+		<h1 style="background-color: unset; color: rgb(49,43,37);"> Bo Ryan's Lab 4 <br> Bones of Old Earth</h1>
+		<h2> for CIS195 Hirons</h2>
+	</div>
+</header>
+
+<nav>
+	<a href="index.html">Home</a>
+	<a href="lists.html">Lists</a>
+	<a href="pictures.html">Pictures</a>
+	<a href="tables.html">Tables</a>
+	<a href="forms.html">Forms</a>
+	<a href="faq.html">FAQ</a>
+	<a href="contact.html">Contact</a>
+	<a href="../../index.html">Site Map</a>
+</nav>
+
+<main>
+	<h1>X. “old port”</h1>
+	<h2>Abandoned frontier encampment</h2>
+	
+	<aside>Derelict Station. Occasional Life Signs. Reactor Inactive.</aside>
+	
+	<img 
+		src="./pics/station.png" 
+		style="width: 80vw; align-content: center; border: thin solid; margin: 1em 0em; max-width: 860px;" 
+		title="Old Port before it was decomissioned" 
+		alt="Old Port in its intact state, a ship docks at a nearby space station in the foreground" 
+		loading="eager">
+
+	<div class="flex-container" style="gap: 2em;">
+		<p>Decommissioned station used by pioneers. It ran the first ever mission into the patch. Retrofitted with cheap chemical boosters, holds packed with able crews and scrap cutters, the first Free Spacers parked this thing deep in the patch. Once Spinward Yards were up and running, the Spacers stripped Old Port for all it was worth—Spacers aren't in the habit of wasting good tech. </p>
+		<p>The station, designated Alphabet Papa 616, is stripped to the studs. Crew compartments sit exposed to vacuum. Electrical and mechanical housings are empty, stripped even of wiring and insulating conduit. The station's bulk and skeletonized structure confound sensors, making it a popular spot for smugglers, radical union crews, and bounty hunters. Visiting ships land in one of two cavernous holds, plastered with graffiti letters and crew stickers. </p>
+	</div>
+	
+	
+	<div class="flex-container" style="align-items: center;">
+		<div>
+			<h2>d6—Who's here?</h2>
+			<ol>
+				<li>Skittish <b>salvage crew</b>, they're six solar months behind on their union dues. Flying a sketchy looking cutter.</li>
+				<li>Nosy <b>bounty hunter</b> with a slick net-connected helmet, it's got facial recognition and threat assessment. Pilots a little fighter with a nasty ECM and missile payload.</li>
+				<li><b>Syndicate enforcers</b> hiding out after a job. They've got killer's tattoos and a shuttle all shot up with small arms fire.</li>
+				<li>Some real flighty <b>scabs</b> in a real shiny looking cutter, kitted out for some kind of CBRN job.</li>
+				<li>Brainrot <b>tech CEO</b> camped out working on his new EDM track. Says this spot has great vibes. Flashy shuttle with the kind of pilot android that can handle flying the patch.</li>
+				<li>Contract <b>deputy</b> out here to serve a warrant for criminal infringement of patent rights. On <i>2-in-1</i>, it's for you.</li>
+			</ol>
+		</div>
+		<div>
+			<img src="./pics/corpoflyer.png" 
+				style="align-items: center;" 
+				class="responsive-image" 
+				title="expensive, highly maneuverable shuttle with advanced sensor package" 
+				alt="compact spaceship with a bulbous cockpit and cluster of three large thrusters">
+		</div>
+	</div>
+
+	
+
+	<div class="flex-container">
+		<div>
+			<h2>d6—Locations</h2>
+			<ol>
+				<li><b>Aft hold</b>: preferred by union crews. Visitors leave ship callsigns in wax marker, hundreds cover the floor and walls.</li>
+				<li><b>Fore hold</b>: preferred by incognito crews. Sightlines broken up with a few wrecked shuttles and abandoned cargo containers.</li>
+				<li><b>Engineering</b>: everything was taken from this deck, a fat hole marks the spot where the reactor used to be.</li>
+				<li>Bridge: the old flight control system is still here. A relic, running off magnetic tape and thumb size circuit components. Injection molded housing of brittle yellowed plastic.</li>
+				<li><b>Crew levels</b>: nothing remains. Exposed structural beams beneath an open roof to hard vacuum.</li>
+				<li><b>Station exterior</b>: pockmarked with dents from debris impacts, and holes where instruments and attitude thrusters have been stripped away.</li>
+			</ol>
+		</div>
+		
+		<div>
+			<h2>d6—Details</h2>
+			<ol>
+				<li>There was a firefight here lately. One side lost bad.</li>
+				<li>Some graffiti reads “Reactor Boys Rule”</li>
+				<li>Intact electronics spam sensors with alerts</li>
+				<li>Piled garbage: emptied cans of processed meat and drained pouches of liquor</li>
+				<li>This section of the station is starting to break apart, too many structural components have been scavenged.</li>
+				<li>This area doesn't have any connectivity to SecNet</li>
+			</ol>
+		</div>
+	</div>
+
+	<div class="flex-container" style="align-items: center; padding-top: 3em;">
+		<div>
+			<img 
+				src="./pics/scrapper.png" 
+				class="responsive-image"
+				title="diminutive scrap cutter with articulating thruster arms"
+				alt="cylindrical spaceship with four thrusters, each mounted on a short articulating arm">
+			</div>
+				
+		<div>
+			<aside>Scrap Cutters are the bread and butter of the Free Spacer flotilla. A pressurized hull fitted with cramped crew quarters, a dirty reactor bottle, and attitude thrusters. The cutter is packed with sensors, blasting ordinance, or power tools, depending on mission parameters. </aside>
+		</div>
+	</div>
+
+</main>
+
+<footer>
+	Text on this page &copy; 2024 <a href="mailto:bo.ryan@me.com">Bo Ryan Crum</a>
+	
+	<address>1305 City View St, Eugene OR 97402</address>
+</footer>
+
+</body>
+</html>

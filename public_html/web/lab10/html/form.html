@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gravy Press @ boryan.online</title>
+  <meta name="description" content="Bo Ryan's Personal Website">
+
+  <link rel="icon" href="../printerGravy.svg">
+
+
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/landscape.css" media="only screen and (min-width: 900px)">
+  <link rel="stylesheet" href="../css/mobile.css" media="only screen and (max-width: 720px)">
+  <link rel="stylesheet" href="../css/print.css" media="print">
+
+  <link rel="stylesheet" href="https://indestructibletype.com/fonts/Jost.css" type="text/css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+      <div id="content-hero">
+        <img src="../pics/train.jpg"
+        alt="A dark blue train car, covered in white graffiti writing and faded commercial markings.">
+      </div>
+  </header>
+
+  <main>
+    <div id="grid-wrapper">
+
+      <div class="grid-fullWidth">
+        <nav id="content-topNav">
+            <a href="../index.html">Home</a>
+            <a href="table.html">table</a>
+            <a href="lists.html">list</a>
+            <a href="pictures.html">pics</a>
+            <a href="form.html"class="style-nav--here">contact</a>
+            <a href="faq.html">faq</a>
+            <!-- <a href="design.html">Design</a>
+            <a href="illu.html">Pictures</a>
+            <a href="photog.html">Photos</a>
+            <a href="modules.html">Words</a> -->
+        </nav>
+        <h1>boryan&shy;.online</h1>
+      </div> 
+
+<!-- Page Content -->
+
+      <div class="grid-leftColumn">
+        <nav id="content-sideNav">
+          <ul>
+            <li><a href="../index.html" >Home</a></li>
+            <li><a href="table.html">table</a></li>
+            <li><a href="lists.html">list</a></li> 
+            <li><a href="pictures.html">pics</a></li>   
+            <li><a href="form.html" class="style-nav--here">contact</a></li>       
+            <li><a href="faq.html">faq</a></li>
+
+            <!-- <a href="design.html">Design</a>
+              <a href="illu.html">Pictures</a>
+              <a href="photog.html">Photos</a>
+              <a href="modules.html">Words</a> -->
+          </ul>
+        </nav>
+      </div> 
+
+      <section class="grid-centerColumn">
+        <h2>Get in touch with the man behind the spaghetti fountain!</h2>
+        <p>Drop a line using the contact form and I'll dispatch a messenger pigeon posthaste</p>
+
+        <form method="post" action="https://www.w3schools.com/action_page.php" class="layout-verticalPadding">
+          <fieldset class="content-form__tabular">
+            <legend>About you:</legend>
+            <label for="fName">First:</label>
+            <input type="text" id="fName" name="fName" placeholder="Abernathy">
+            <label for="lName">Last:</label>
+            <input type="text" id="lName" name="lName" placeholder="Salamandazar-Leicester">
+            <label for="specialty">Specialty:</label>
+            <input type="text" id="specialty" name="specialty" placeholder="Abjuration">
+            <span>Affiliation:</span>
+            <div>
+              <input type="radio" value="order" id="order" name="affiliation"><label for="order">Order</label>
+              <br><input type="radio" value="coven" id="coven" name="affiliation"><label for="coven">Coven</label>
+              <br><input type="radio" value="lawfirm" id="lawfirm" name="affiliation"><label for="lawfirm">Lawfirm</label>
+            </div>
+          </fieldset>
+
+          <fieldset class="content-form__tabular">
+            <legend>About your request:</legend>
+            <label for="query">Query:</label>
+            <textarea id="query" name="query" rows="2" placeholder="What's your favorite flavor of squid ink?"></textarea>
+            
+            <label for="reason">Reason:</label>
+            <textarea name="reason" id="reason" rows="4" placeholder="You have to do better than: 'I simply must know'"></textarea>
+            
+            <label for="sign">Astro–Sign</label>
+            <select id="sign" name="sign" required>
+              <option value="option1">Pasta Monster</option>
+              <option value="option2">Astronaut</option>
+              <option value="option3">Mouse</option>
+              <option value="option4">Xygag</option>
+              <option value="option5">Racoon in a trench coat</option>
+              <option value="option6">Tropius</option>
+            </select>
+          </fieldset>
+
+          <fieldset class="content-form__tabular">
+            <legend>Additional Information:</legend>
+            <span>Mo' Stuff:</span>
+            <div>
+              <input type="radio" value="earth" id="earth" name="element"><label for="earth">Earth</label>
+              <br><input type="radio" value="wind" id="wind" name="element"><label for="wind">Wind</label>
+              <br><input type="radio" value="fire" id="fire" name="element"><label for="fire">Fire</label>
+            </div>
+            <span>Legally binding checkboxes:</span>
+            <div>
+              <div><input type="checkbox" name="age" id="age" value="legalAge"><label for="age">I am over 13 years old</label>
+              <br><input type="checkbox" name="oldAge" id="oldAge" value="oldAge"><label for="oldAge">I am over 13 thousand years old</label>
+              <br><input type="checkbox" name="homonculus" id="homonculus" value="homonculus"><label for="homonculus">I am a homonculus</label>
+              <br><input type="checkbox" name="isekai" id="isekai" value="isekai"><label for="isekai">I am trapped in this dimension</label>
+              <br><input type="checkbox" name="emailList" id="emailList" value="emailList"><label for="emailList">Inundate me with promotional emails!</label>
+            </div>
+            
+          </fieldset>
+          <input type="submit" method="post" value="Dispatch!" class="content-cta-button" id="content-form__submit">
+          <input type="reset" class="content-cta-button">
+
+        </form>
+
+      </section>
+
+      <!-- end page content -->
+     
+      <footer id="footer">
+        <div class="layout-verticalPadding">
+          <hr>
+          <p>
+            <a href="mailto:bo.ryan@me.com" id="mail">Contact</a>
+          </p>
+          <aside>
+            &copy; Bo Ryan Crum 2024, all rights reserved
+          </aside>
+          
+        </div>
+      </footer>
+
+    </div>
+
+  </main>
+</body>
+
+</html>
