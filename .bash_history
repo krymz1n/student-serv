@@ -191,3 +191,13 @@ git merge temp
 git pull temp
 git status
 git merge temp
+ls
+get-location
+Get-Location
+ls
+ls -a
+pwd
+find . ".git"
+find . -maxdepth 2 -name ".git"
+ls
+git remote -v
