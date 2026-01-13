@@ -1,0 +1,9 @@
+# Ignore everything
+*
+
+# Except the .gitignore itself
+!.gitignore
+
+# Except public_html
+!public_html/
+
