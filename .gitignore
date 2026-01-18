@@ -6,5 +6,5 @@
 
 # Except public_html
 !public_html/
-# And it's contents
+# And its contents
 !public_html/**
