@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Brainstormer</h1>
+  <h3 id="prompt">Add four words to start</h3>
+  <input type="text" id="wordbox">
+  <button onclick="go()">submit</button>
+  <div id="output"></div>
+</body>
+<script>
+  let wordList = [];
+
+  function getTwoRandom(arr) {
+  const i = Math.floor(Math.random() * arr.length);
+  let j = Math.floor(Math.random() * (arr.length - 1));
+  if (j >= i) j++;
+  return `${arr[i]} ${arr[j]}`;
+  }
+
+  function go(){
+    let input = document.querySelector("#wordbox").value;
+    document.querySelector("#wordbox").value = '';
+    document.querySelector("#output").innerHTML += "<p>" + input + '</p>';
+
+    wordList.push(input)
+    if (wordList.length < 4){
+      return
+    }
+    let prompt = getTwoRandom(wordList);
+    document.querySelector("#prompt").innerHTML = prompt;
+
+  }
+</script>
+</html>
