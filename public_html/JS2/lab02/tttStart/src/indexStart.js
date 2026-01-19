@@ -20,14 +20,14 @@
 
 // start with these global variables
 // is x the next player.  x plays first so it is initialized to true
-var xIsNext = true;
+let xIsNext = true;
 // this is the data for the game NOT the UI elements
-var squares = Array(9).fill(null);
+let squares = Array(9).fill(null);
 // these 2 keep track of who wins and where on the board the win occurs
-var winner = null;
-var winningLine = Array();
+let winner = null;
+let winningLine = Array();
 // all of the possible ways to win
-var lines = [
+let lines = [
     [0, 1, 2],
     [3, 4, 5],
     [6, 7, 8],
@@ -42,12 +42,18 @@ var lines = [
 // when the page loads, call the function init
 // write the function init
 // write JUST a CONSOLE.LOG statement in handleClick and then test
+document.addEventListener("DOMContentLoaded", init);
 
 // Adds an onclick handler to all of the squares
 // The name attribute for all of the divs is square
 // Use the function handleClick to handle the event
 function init()
 {
+    const uiSquares = document.querySelectorAll("[name=square]");
+    for (let square of uiSquares){
+        square.onclick = () => handleClick(square);
+        console.log("bound handleClick to: " + square);
+    }
     // create a variable called uiSquares that references all of the elements whose name is square
     // create a for loop to iterate through each element in uiSquares
         // set the onclick property for the current uiSquare to handleClick
@@ -63,22 +69,31 @@ function init()
 // the function that gets called when the user clicks a square
 // it updates the global variables as well as the UI
 // it calls a number of the helper functions to do that
-function handleClick() {
-
+function handleClick(square) {
     // Get the id from the square that triggered the event and put it in a variable called index
     // Remember that the keyword this refers to the square you clicked and the id is an integer 0 - 8
-
+    const index = square.id;
     // create a local variable called player and set it to either "X" or "O" using the variable xIsNext
     // Update the variable xIsNext to the "opposite" boolean value
-
+    const player = (xIsNext) ? "X" : "O";
+    xIsNext = !xIsNext;
     // Set the element in the squares array at index to the player's symbol.
     // Update the inner html for the square in the UI to the player's symbol too
     // Set the onclick handler for this square in the UI to an empty anonymous function or arrow function
-
+    squares[index] = player;
+    square.innerHTML = player;
+    square.onclick = () => {}
     // If a call to calculateWinner returns true
         // highlight the winner and disable all of the squares
     // otherwise 
         //update the status in the UI to display the player
+    if (calculateWinner()){
+        highlightWinner();
+        disableAll();
+    }
+    else {
+        document.getElementById("status").innerHTML = (xIsNext) ? "Next Player: X" : "Next Player: O"
+    }
 }
 
 // this function determines if there's a winner based on the state of the array squares
@@ -113,21 +128,28 @@ function calculateWinner() {
 // changes all of the UI elements in the winningLine to red when there is a winner
 // it also updates the status element on the page to display the winner
 function highlightWinner() {
-
     // Update the status in the UI to display the winner
     // Iterate through the winningLine array.  It contains the indices of the winning squares
     //      get the next square using the current index in the winningLine array as the id
     //      add the class red to the square
-
+    const winnerMsg = (!xIsNext) ? "Player X Wins" : "Player O Wins";
+    document.getElementById("status").innerHTML = winnerMsg;
+    for (let square of winningLine){
+        const squareElem = document.getElementById(`${square}`);
+        squareElem.classList.add("text-bg-danger");
+    }
 }
 
 // sets the on click event handler for each square in the ui to a function that does nothing 
 function disableAll() {
-
+    console.log("disable all")
     // create a variable that stores all of the ui squares on the page
     // iterate through that array
         // Set the onclick handler for a ui square to function that does nothing
-
+    const uiSquares = document.querySelectorAll("[name=square]");
+    for (let square of uiSquares){
+        square.onclick = () => {};
+    }
 }
 // END PART 3 - TEST THE ENTIRE APP//
 
