@@ -10,4 +10,4 @@ public_html/.DS_Store
 # And its contents
 !public_html/**
 
-.DS_Store
+public_html/DS_Store
