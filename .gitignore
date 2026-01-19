@@ -1,5 +1,6 @@
 # Ignore everything
 *
+public_html/.DS_Store
 
 # Except the .gitignore itself
 !.gitignore
