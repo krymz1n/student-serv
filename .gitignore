@@ -9,3 +9,5 @@ public_html/.DS_Store
 !public_html/
 # And its contents
 !public_html/**
+
+.DS_Store
