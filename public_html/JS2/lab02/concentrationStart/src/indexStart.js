@@ -197,7 +197,7 @@ function disableCard(index) {
     var card = document.getElementById(`${index}`);
     card.onclick = () => {}; 
     card.style.cursor = 'none';
-    console.log("disabled: " + card)
+    console.log("disabled: " + card);
 }
 
 // disable all of the cards
