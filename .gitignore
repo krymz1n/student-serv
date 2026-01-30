@@ -1,6 +1,7 @@
 # Ignore everything
 *
 public_html/.DS_Store
+.vscode-server/
 
 # Except the .gitignore itself
 !.gitignore
