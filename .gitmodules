@@ -1,3 +1,6 @@
 [submodule "public_html/JS2/lab03"]
 	path = public_html/JS2/lab03
 	url = git@github.com:LCC-CIT/lab-3-classes-krymz1n.git 
+[submodule "public_html/JS2/lab04"]
+	path = public_html/JS2/lab04
+	url = git@github.com:LCC-CIT/lab-4-node-js-krymz1n.git
