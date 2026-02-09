@@ -5,6 +5,7 @@ public_html/.DS_Store
 
 # Except the .gitignore itself
 !.gitignore
+!.gitmodules
 
 # Except public_html
 !public_html/
