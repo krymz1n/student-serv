@@ -7,3 +7,6 @@
 [submodule "public_html/JS2/lab05"]
 	path = public_html/JS2/lab05
 	url = git@github.com:LCC-CIT/lab-5-html-5-canvas-krymz1n.git
+[submodule "public_html/JS2/lab06"]
+	path = public_html/JS2/lab06
+	url = git@github.com:LCC-CIT/lab-6-ajax-krymz1n.git
