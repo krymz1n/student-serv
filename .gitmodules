@@ -10,3 +10,6 @@
 [submodule "public_html/JS2/lab06"]
 	path = public_html/JS2/lab06
 	url = git@github.com:LCC-CIT/lab-6-ajax-krymz1n.git
+[submodule "public_html/JS2/lab07"]
+	path = public_html/JS2/lab07
+	url = git@github.com:LCC-CIT/lab-7-event-app-krymz1n.git
