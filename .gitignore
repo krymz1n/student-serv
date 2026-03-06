@@ -13,3 +13,6 @@ public_html/.DS_Store
 !public_html/**
 
 public_html/DS_Store
+
+public_html/JS2/project/node_modules
+public_html/JS2/project/dist
